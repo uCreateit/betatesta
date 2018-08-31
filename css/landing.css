@@ -26,6 +26,21 @@ header {
     padding: 54px 0 25px 0;
 }
 
+header img {
+    vertical-align: top;
+}
+
+.logo {
+    color: #9B9B9B;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: -1.47px;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
 .pairing_marker{
     margin-bottom: 150px;
     position: relative;
@@ -48,8 +63,8 @@ header {
     width: 22px;
     height: 22px;
     border-radius: 50%;
-    right: 0;
-    top: 0;
+    right: 64px;
+    top: -25px; 
 }
 
 .pairing_marker:after{
@@ -78,8 +93,15 @@ header {
     color: #FFFFFF;
     font-size: 18px;
     font-weight: 500;
-    line-height: 21px;
-    display: flex;
+    line-height: 39px;
+    display: block;
+    text-align: center;
+}
+
+.request_btn:hover, .request_btn:focus{
+    background-color: #7574FF;
+    color: #FFFFFF;
+    text-decoration: none;
 }
 
 .user_tester, .research_dashboard {
@@ -88,6 +110,10 @@ header {
 
 .user_tester h2, .research_dashboard h2{
   line-height: 40px;
+}
+
+.marker p{
+    padding: 0 32px 0 0;
 }
 
 
@@ -110,6 +136,9 @@ header {
     padding:0 30px 26px;
     box-sizing: border-box;
     margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 26px;
 }
 
 .marker_dot{
@@ -139,15 +168,15 @@ header {
     top: -8px;
 }
 
-.marker_dot .block:nth-child(3):after{
+.marker_dot .block_last:after{
     content: '';
     position: absolute;
-    background: #9D5FFF;
-    width: 22px;
-    height: 22px;
+    background: #FFD525;
+    height: 20px;	
+    width: 20px;
     border-radius: 50%;
-    right: 0;
-    top: 0;
+    right: 5px;
+    top: 25%;
 }
 
 .user_tester, .research_dashboard{
