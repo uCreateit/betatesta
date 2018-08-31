@@ -1,0 +1,110 @@
+body{
+    color: #4A4A4A;
+    font-family: "FreightSans Pro";
+    font-size: 18px;
+}
+
+img{
+    max-width: 100%;
+}
+
+h2{
+    color: #050633;
+    font-size: 32px;
+    font-weight: 600;
+    line-height: 80px;
+}
+
+P{
+    color: #4A4A4A;	
+    font-size: 18px;
+    font-weight: 500;
+}
+
+header {
+    padding: 54px 0 25px 0;
+}
+
+.pairing_marker{
+    margin-bottom: 150px;
+}
+
+.pairing_marker h1{
+    color: #050633;
+    font-size: 64px;
+    font-weight: 600;
+    letter-spacing: -1.47px;
+    line-height: 70px;
+    margin: 0;
+    position: relative
+}
+
+.pairing_marker h1:before{
+    content: '';
+    position: absolute;
+    background: #9D5FFF;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    right: 0;
+    top: 0;
+}
+
+.pairing_marker:after{
+    content: '';
+    position: absolute;
+    background: #FFD525;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    right: 50%;
+    bottom: -17%;
+}
+
+.pairing_marker h3{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 30px;
+    margin: 43px 0;
+}
+
+.request_btn{	
+    height: 54px;
+    width: 227px;
+    border-radius:7px;
+    background-color: #5857FF;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 21px;
+    display: flex;
+}
+
+.marker{
+    margin-bottom: 180px;
+}
+
+.block{
+    min-height: 323px;
+    max-width: 295px;
+    width: 100%;
+    border-radius: 7px;
+    background-color: #FFFFFF;
+    box-shadow: 0 2px 16px 0 rgba(241,125,255,0.34);
+    margin-top:50px; 
+}
+
+.block_img{
+    width: 219;
+    height: 219px;
+}
+
+.block_content p{
+    padding:0 30px 26px;
+    box-sizing: border-box;
+    margin-bottom: 0;
+}
+
+.user_tester{
+    position: relative;
+}
