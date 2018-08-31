@@ -27,6 +27,7 @@ header {
 
 .pairing_marker{
     margin-bottom: 150px;
+    position: relative;
 }
 
 .pairing_marker h1{
@@ -108,6 +109,33 @@ header {
     padding:0 30px 26px;
     box-sizing: border-box;
     margin-bottom: 0;
+}
+
+.marker_dot{
+    position: relative;
+}
+
+.marker_dot h2::before{
+    content: '';
+    position: absolute;
+    background: #FF5E99;
+    width: 51px;
+    height: 51px;
+    border-radius: 50%;
+    left: -36px;
+    top: -60px;
+}
+
+
+.marker_dot h2::after{
+    content: '';
+    position: absolute;
+    background: #5857FF;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    right: 0;
+    top: -8px;
 }
 
 .user_tester, .research_dashboard{
