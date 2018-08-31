@@ -80,9 +80,14 @@ header {
     display: flex;
 }
 
-.marker{
-    margin-bottom: 180px;
+.user_tester, .research_dashboard {
+    padding-top: 180px;
 }
+
+.user_tester h2, .research_dashboard h2{
+  line-height: 40px;
+}
+
 
 .block{
     min-height: 323px;
@@ -105,6 +110,22 @@ header {
     margin-bottom: 0;
 }
 
-.user_tester{
+.user_tester, .research_dashboard{
     position: relative;
+}
+
+.research_dashboard_content{
+    padding-right: 20%;
+}
+
+.research_dashboard_img{
+    margin-left: -15px;
+}
+
+.user_tester_content{
+    padding-left: 20%;
+}
+
+.user_tester_img{
+    margin-right: -15px;
 }
