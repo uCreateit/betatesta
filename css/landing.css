@@ -104,8 +104,9 @@ a:hover{
     text-decoration: none;
 }
 
-.user_tester, .research_dashboard {
+.user_tester, .research_dashboard, .tester_dot {
     padding-top: 180px;
+    display: flex;
 }
 
 .user_tester h2, .research_dashboard h2{
@@ -187,12 +188,126 @@ a:hover{
     padding-right: 20%;
 }
 
+.research_dashboard_content::after {
+    content: '';
+    position: absolute;
+    background: #9D5FFF;
+    height: 34px;
+    width: 34px;
+    border-radius: 50%;
+    right: 54%;
+    bottom: -80px;
+}
+
+.research_dashboard::before {
+    content: '';
+    position: absolute;
+    background: #FF5E99;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 60%;
+    bottom: -20px;
+}
+
+.tester_dot{
+    position: relative;
+    padding-bottom: 90px
+}
+
+.tester_dot::before {
+    content: '';
+    position: absolute;
+    background: #FDC228;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    right: 19%;
+    top: 24%;
+}
+
+.tester_dot::after {
+    content: '';
+    position: absolute;
+    background: #FF5E99;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    left: 47%;
+    bottom: -20px;
+}
+
+.tester_dot .block_first:after{
+    content: '';
+    position: absolute;
+    background: #5857FF;
+    height: 27px;	
+    width: 27px;
+    border-radius: 50%;
+    left: 0px;
+    top: 57%;
+}
+
+.tester_dot .block_middle:after{
+    content: '';
+    position: absolute;
+    background: #9D5FFF;
+    height: 31px;	
+    width: 31px;
+    border-radius: 50%;
+    right: 29px;
+    top: 24%;
+}
+
 .research_dashboard_img{
     margin-left: -15px;
 }
 
 .user_tester_content{
     padding-left: 20%;
+    position: relative;
+}
+
+.user_tester_content p {
+    padding-right: 20%;
+}
+
+.research_dashboard_content p, .research_dashboard_content h2 {
+    padding-left: 20%;
+}
+
+.user_tester_content:after{
+    content: '';
+    position: absolute;
+    background: #5857FF;
+    height:43px;	
+    width:43px;
+    border-radius: 50%;
+    right: 0;
+    bottom: 0;
+}
+
+.user_tester:before{
+    content: '';
+    position: absolute;
+    background: #FFD525;
+    height: 33px;	
+    width: 33px;
+    border-radius: 50%;
+    left: 34%;
+    top: 25%;
+}
+
+
+.user_tester:after{
+    content: '';
+    position: absolute;
+    background: #FF5E99;
+    height: 20px;	
+    width: 20px;
+    border-radius: 50%;
+    left: 33%;
+    bottom: 0;
 }
 
 .user_tester_img{
