@@ -94,7 +94,7 @@ a:hover{
     font-size: 18px;
     font-weight: 500;
     line-height: 39px;
-    display: block;
+    display: inline-block;
     text-align: center;
 }
 
@@ -312,4 +312,54 @@ a:hover{
 
 .user_tester_img{
     margin-right: -15px;
+}
+.learn_betatesta{
+    padding: 90px 0;
+    position: relative;
+}
+
+.learn_betatesta_content {
+    padding-right: 4%;
+}
+
+.learn_btn{
+    box-sizing: border-box;
+    height: 56px;
+    width: 171px;
+    border: 2px solid #5857FF;
+    border-radius: 7px;
+    color: #000000;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 39px;
+}
+
+.learn_btn:hover, .learn_btn:focus{
+    background: #5857FF;
+    color: #fff;
+}
+.learn_betatesta::before{
+    content: '';
+    position: absolute;
+    background: #FFD525;
+    height: 20px;	
+    width: 20px;
+    border-radius: 50%;
+    right: 44%;
+    top: 64px;
+}
+
+footer{
+    border-top:2px solid #e7e7e7;
+    padding: 65px 0 85px;
+}
+
+footer p{margin: 0;}
+
+.socail_link a:hover{
+    opacity: 0.7;
+}
+
+.socail_link a:first-child{
+    margin-right: 25px;
 }
