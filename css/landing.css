@@ -366,9 +366,6 @@ footer p{margin: 0;}
     margin-right: 25px;
 }
 
-.display-2{
-    display: none !important;
-}
 
 .modal-lg {
     max-width:550px;
@@ -477,9 +474,7 @@ footer p{margin: 0;}
         line-height: 26px;
     }
 
-    .marker p {
-        padding: 0;
-    }
+    
 
     .user_tester, .research_dashboard, .tester_dot {
         padding-top: 60px;
@@ -494,46 +489,6 @@ footer p{margin: 0;}
         position: relative;
     }
 
-    .tester_dot::after{
-        left: 20%;
-        bottom: 14px;
-        width: 43px;
-        height: 43px;
-        background: #5857FF;
-    }
-
-    .tester_dot .block_middle::after, .tester_dot .block_first::after{
-        display: none;
-    }
-
-    .tester_dot .block_last::after {
-        content: '';
-        position: absolute;
-        background: #9D5FFF;
-        height: 20px;
-        width: 20px;
-        border-radius: 50%;
-        right: 29px;
-        top: 24%;
-    }
-
-    .tester_dot::before {
-        background: #FF5E99;
-        height: 30px;
-        width: 30px;
-        right: 10%;
-        top: 3%;
-    }
-
-    .marker_dot .block_last::after {
-        left: 80px;
-        bottom: -7%;
-        top: auto;
-    }
-
-    .learn_betatesta::before{
-        top: 0;
-    }
     footer {
         border-top: 2px solid #e7e7e7;
         padding: 40px 0;
@@ -547,10 +502,6 @@ footer p{margin: 0;}
         text-align: left!important; 
     }
 
-    .copyright{
-        display: none;
-    }
-
     .pairing_marker {
         margin-bottom: 80px;
     }
@@ -561,37 +512,20 @@ footer p{margin: 0;}
     }
 
     .block{
-        box-shadow: none;
-        min-height: 100%;
         max-width: 100%;
+        margin-top: 25px;
     }
 
-    .block_img {
-        width:100%;
-        height: 160px;
-    }
 
     .marker .justify-content-start, .marker .justify-content-end{
         justify-content: center !important;
     }
-    .block_content p {
-        padding: 0 0 26px;
-    }
-
     .logo {
         display: none;
     }
 
     .pairing_marker h1::before, .marker_dot h2::before, .marker_dot h2::after{
         display: none
-    }
-
-    .display-1{
-        display: none !important;
-    }
-
-    .display-2{
-        display: block !important;
     }
 
 }
