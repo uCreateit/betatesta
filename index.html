@@ -23,15 +23,16 @@
 </header>
 <section class="pairing_marker">
   <div class="container">
-    <div class="row">
-        <div class="col-md-5 align-self-center">
-           <h1>Pairing Makers with Testers</h1> 
-           <h3>Receive feedback for your website, app or prototype in minutes for free.</h3>
-           <a class="btn request_btn" href="javascript:void(0)">REQUEST EARLY ACCESS</a>
-        </div>
+    <div class="row d-flex flex-row-reverse">
         <div class="col-md-6 offset-md-1">
             <img src="images/pairing-marker.svg" alt="pairing-marker" />
          </div>
+        <div class="col-md-5 align-self-center">
+           <h1>Pairing Makers with <span class="rotate_title"></span></h1> 
+           <h3>Receive feedback for your website, app or prototype in minutes for free.</h3>
+           <a class="btn request_btn" href="javascript:void(0)">REQUEST EARLY ACCESS</a>
+        </div>
+        
     </div>
   </div>
 </section>  
@@ -84,7 +85,7 @@
     </div>
   </div>
 </srction>
-<section class="user_tester">
+<section class="user_tester d-none d-md-block">
   <div class="container-fluid">
     <div class="row">
       <div class="col-md-6 align-self-center user_tester_content">
@@ -100,7 +101,7 @@
     </div>
   </div>
 </section>
-<section class="research_dashboard">
+<section class="research_dashboard  d-none d-md-block">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-6">
@@ -187,13 +188,13 @@
         <a href="javascript:void(0)" class="btn request_btn">REQUEST EARLY ACCESS</a>
       </div>
       <div class="col-md-3 align-self-center text-right socail_link">
-        <a href="javascript:void(0)" class=""><img src="images/twitter.svg" alt="" /></a>
-        <a href="javascript:void(0)" class=""><img src="images/facebook.svg" alt="" /></a>
+        <a href="https://twitter.com/@Getbetatesta"  target="_blank"><img src="images/twitter.svg" alt="" /></a>
+        <a href="mailto:betatesta@ucreate.it?Subject=Hello%20again" target="_top"><img src="images/mail.svg" alt="" /></a>
       </div>
     </div>
     <div class="row mt-4">
       <div class="col-md-6">
-        <p>Powered by: <img src="images/ucreate.svg" alt="" /></p>
+        <p>Powered by: <a href="https://www.ucreate.it/" target="_blank"><img src="images/ucreate.svg" alt="" /></a></p>
       </div>
       <div class="col-md-6 d-flex justify-content-end">
         <p>© BetaTesta 2018</p>
@@ -205,5 +206,33 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src=“https://www.googletagmanager.com/gtag/js?id=UA-77973127-1“></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag(‘js’, new Date());  gtag(‘config’, ‘UA-77973127-1’);
+    </script>
+    <script type=“text/javascript”>
+      !function(d){var s=d.createElement(‘script’);s.src=‘https://widget.indemand.ly/launcher.js’;s.onload=function(){window.indemandly = new Indemandly({“domain”:“betatesta”});};var c=d.getElementsByTagName(‘script’)[0];c.parentNode.insertBefore(s,c);}(document)
+    </script>
+    <script type=“text/javascript” src=“//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5b88fa357501ab09”></script>
+    <script src="js/typer.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+        $(".rotate_title").typer({
+          startDelay: 1000,
+          repeatDelay: 1000,
+          backspaceDelay: 1000, 
+            strings: [
+                "Founders",
+                "Startups",
+                "Makers",
+                "Designers",
+                "Products"
+            ]
+        });
+      });
+    </script>
   </body>
 </html>
