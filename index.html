@@ -36,9 +36,9 @@
             <img src="images/pairing-marker.svg" alt="pairing-marker" />
          </div>
         <div class="col-md-5 align-self-center">
-           <h1>Pairing Makers with <span class="rotate_title"></span></h1> 
+           <h1>Pairing Makers with <br /><span class="rotate_title"></span></h1> 
            <h3>Receive feedback for your website, app or prototype in minutes for free.</h3>
-           <a class="btn request_btn" href="javascript:void(0)">REQUEST EARLY ACCESS</a>
+           <a class="btn request_btn" href="javascript:void(0)" data-toggle="modal" data-target=".bd-example-modal-lg">REQUEST EARLY ACCESS</a>
         </div>
         
     </div>
@@ -80,7 +80,7 @@
             </div>
           </div>
         </div>
-        <div class="col-md-4 d-flex justify-content-end">
+        <div class="col-md-4 d-flex justify-content-end display-1">
             <div class="block block_last">
               <div class="block_img d-flex justify-content-center">
                 <img src="images/marker-3.svg" alt="marker1" />
@@ -90,6 +90,16 @@
               </div>
             </div>
           </div>
+          <div class="col-md-4 d-flex display-2">
+              <div class="block block_last">
+                <div class="block_img d-flex justify-content-center">
+                  <img src="" alt="marker1" />
+                </div>
+                <div class="block_content">
+                    <p>Get a release readiness score so you can gauge when your products ready to ship.</p>
+                </div>
+              </div>
+            </div>
     </div>
   </div>
 </srction>
@@ -159,7 +169,7 @@
             </div>
           </div>
           <div class="col-md-4 d-flex justify-content-end">
-              <div class="block">
+              <div class="block block_last">
                 <div class="block_img d-flex justify-content-center">
                   <img src="images/tester-3.svg" alt="marker1" />
                 </div>
@@ -200,7 +210,7 @@
         <a href="mailto:betatesta@ucreate.it?Subject=Hello%20again" target="_top"><img src="images/mail.svg" alt="" /></a>
       </div>
     </div>
-    <div class="row mt-4">
+    <div class="row mt-4 copyright">
       <div class="col-md-6">
         <p>Powered by: <a href="https://www.ucreate.it/" target="_blank"><img src="images/ucreate.svg" alt="" /></a></p>
       </div>
@@ -210,6 +220,56 @@
     </div>
   </div>
 </footer>
+
+
+<div class="modal register_form fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      
+      <div class="modal-content">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><img src="images/close.png" alt="close" /></button>
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-lg-12">
+                <h2>Register for early access</h2>  
+                <p>Register today and get exclusive access to BetaTesta before we publically launch. Also follow our journey building the platform through our newsletter.</p>
+                <p>Please select the option below that best describes you:</p>
+            </div>
+          </div> 
+          <div class="row">
+              <div class="col-lg-12">    
+                 <form>
+                   <div class="form-group custom-radio-btns">
+                      <label for="register-option-1">
+                        <input type="radio" id="register-option-1" name="register-option" checked>
+                        <span class="checkmark"></span>
+                        <span class="radio_text">I'm a tester looking for awesome products</span>
+                      </label>
+                      <label for="register-option-2">
+                        <input type="radio" id="register-option-2" name="register-option" >
+                        <span class="checkmark"></span>
+                        <span class="radio_text">I'm a maker looking for some user testers</span>
+                      </label>
+                      <label for="register-option-3">
+                          <input type="radio" id="register-option-3" name="register-option" >
+                          <span class="checkmark"></span>
+                          <span class="radio_text">I just want to follow the journey through the newsletter</span>
+                        </label>
+                      </div>
+                  <div class="form-group">
+                    <input type="text" class="form-control recipient-name" id="recipient-name" placeholder="Enter email address">
+                  </div>
+                  <div class="form-group">
+                      <button type="button" class="btn btn-primary request_btn">Sign me up!</button>
+                  </div>
+                </form>
+            </div> 
+          </div>  
+        </div>     
+      </div>
+      
+    </div>
+  </div>
+  
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     
     <!-- Live Chat Script -->
@@ -224,6 +284,7 @@
     <script type="text/javascript">
     $(document).ready(function() {
         $(".rotate_title").typer({
+          typeSpeed: 200,
           startDelay: 1000,
           repeatDelay: 1000,
           backspaceDelay: 1000, 
