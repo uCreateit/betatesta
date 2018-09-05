@@ -158,7 +158,7 @@ a:hover{
 }
 
 
-.marker_dot h2::after{
+.marker_dot h2::after {
     content: '';
     position: absolute;
     background: #5857FF;
@@ -316,6 +316,10 @@ a:hover{
 .learn_betatesta{
     padding: 90px 0;
     position: relative;
+}
+
+.learn_betatesta h2{
+    line-height: 34px;
 }
 
 .learn_betatesta_content {
@@ -552,4 +556,126 @@ footer p{margin: 0;}
    footer .justify-content-end{
     justify-content: flex-start !important;
    }
+   .pairing_marker:after {
+    left: 150px;
+    bottom: -12%;
+}
+.marker_dot h2:after {
+    background: #9D5FFF;
+    width: 22px;
+    height: 22px;
+    right: 33px;
+    top: -110px;
+}
+   .marker_dot h2:before, .pairing_marker h1:before{
+       display: none;
+   }
+   .tester_dot .block_first:after, .block_first:after {
+    content: '';
+    position: absolute;
+    background: #5857FF;
+    height: 27px;
+    width: 27px;
+    border-radius: 50%;
+    right: 0px;
+    left: auto;
+    top: auto;
+    bottom: 35px;
+}
+.marker_dot h2:before, .pairing_marker h1:before, .user_tester:before, .user_tester:after, .user_tester_content:after, 
+.research_dashboard::before, .tester_dot::before, .learn_betatesta::before{
+    display: none;
+}
+.tester_dot .block_first:after, .block_first:after {
+ height: 27px;
+ width: 27px;
+ right: 0px;
+ left: auto;
+ top: auto;
+ bottom: 35px;
+}
+
+.tester_dot .block_middle:after, .marker_dot .block_middle:after {
+ background: #FFD525;
+ height: 20px;
+ width: 20px;
+ left: 8px;
+ bottom: 139px;
+ top:auto;
+ content: '';
+ position: absolute;
+ border-radius: 50%;
+right: 29px;
+}
+
+.tester_dot .block_last:after, .marker_dot .block_last:after {
+ content: '';
+ position: absolute;
+ background: #FFD525;
+ height: 20px;
+ width: 20px;
+ border-radius: 50%;
+ left: 100px;
+ bottom: -9px;
+ top: auto;
+ right: auto;
+}
+
+.tester_dot .block_last:before, .marker_dot .block_last:before {
+    content: '';
+    position: absolute;
+    background: #FF5E99;
+    height: 33px;
+    width: 33px;
+    border-radius: 50%;
+    bottom: 150px;
+    right: 3px;
+}
+
+.tester_dot:after{
+ content: '';
+ position: absolute;
+ background: #5857FF;
+ height: 43px;
+ width: 43px;
+ border-radius: 50%;
+ right: 50px;
+ bottom: 68px;
+ left: auto;
+}
+ .marker_dot:after {
+    content: '';
+    position: absolute;
+    background: #5857FF;
+    height: 43px;
+    width: 43px;
+    border-radius: 50%;
+    right: 68px;
+    bottom: -20px;
+    left: auto;
+   }
+   .learn_beat_img{
+       position: relative;
+   }
+   .learn_beat_img::before {
+    content: '';
+    position: absolute;
+    background: #9D5FFF;
+    height: 31px;
+    width: 31px;
+    border-radius: 50%;
+    bottom: -20px;
+    left: 12px;
+}
+.learn_beat_img::after {
+    content: '';
+    position: absolute;
+    background: #FFD525;
+    height: 21px;
+    width: 21px;
+    border-radius: 50%;
+    bottom: -53px;
+    left: 49px;
+}
+
 }
