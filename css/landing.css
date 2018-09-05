@@ -679,3 +679,9 @@ right: 29px;
 }
 
 }
+
+@media (max-width: 470px) {
+    .pairing_marker h1 {
+        font-size: 38px;
+    }
+}
