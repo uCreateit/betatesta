@@ -436,6 +436,8 @@ footer p{margin: 0;}
     opacity: 0;
     -moz-appearance: none;
     -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
 }
 
 .recipient-name{
@@ -454,6 +456,10 @@ footer p{margin: 0;}
 
 }
 @media (max-width: 768px) {
+
+    header {
+        padding: 25px 0;
+    }
 
     .pairing_marker h1{
         font-size: 44px;		
@@ -506,11 +512,6 @@ footer p{margin: 0;}
         margin-bottom: 80px;
     }
 
-    .pairing_marker::after {
-        left: 40%;
-        bottom: -9%;
-    }
-
     .block{
         max-width: 100%;
         margin-top: 25px;
@@ -520,12 +521,35 @@ footer p{margin: 0;}
     .marker .justify-content-start, .marker .justify-content-end{
         justify-content: center !important;
     }
-    .logo {
-        display: none;
+    .user_tester_content {
+        padding-left: 15px;
     }
 
-    .pairing_marker h1::before, .marker_dot h2::before, .marker_dot h2::after{
-        display: none
+    .user_tester_content p {
+        padding-right: 0;
     }
 
+    .user_tester_img {
+        margin-right: 0;
+        text-align: center !important;
+    }
+    .research_dashboard_content {
+        padding-right: 15px;
+    }
+    .research_dashboard_content p, .research_dashboard_content h2 {
+        padding-left: 0;
+    }
+    .research_dashboard_img {
+        margin-left: 0;
+    }
+    .marker .block .block_content p {
+        padding: 0 30px 26px;
+    }
+
+    .marker  p {
+        padding: 0;
+    }
+   footer .justify-content-end{
+    justify-content: flex-start !important;
+   }
 }
