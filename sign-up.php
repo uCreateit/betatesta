@@ -1,22 +1,8 @@
 <?php
 
-/*
-  curl --request POST \
-  --url 'https://usX.api.mailchimp.com/3.0/lists/57afe96172/members' \
-  --user 'anystring:apikey' \
-  --header 'content-type: application/json' \
-  --data '{"email_address":"urist.mcvankab+3@freddiesjokes.com", "status":"subscribed"}' \
-  --include
- */
 
-/*
-  curl --request POST \
-  --url 'https://us18.api.mailchimp.com/3.0/lists/083828f4c7/members' \
-  --user 'anystring:3989592313899d151cf558c111964b83-us18' \
-  --header 'content-type: application/json' \
-  --data '{"email_address":"jagdeepsingh+betatesta_local_test_7@ucreate.co.in", "status":"subscribed"}' \
-  --include
- */
+ini_set('display_errors', 1);
+ini_set('error_reporting', E_ALL);
 
 require_once 'vendor/autoload.php';
 $dotenv = new Dotenv\Dotenv(__DIR__);
